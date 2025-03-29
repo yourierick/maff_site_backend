@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: maf-backend
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: EMAIL_USER
+        sync: false
+      - key: EMAIL_PASS
+        sync: false
+      - key: EMAIL_RECIPIENT
+        sync: false
